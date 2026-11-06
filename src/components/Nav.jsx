@@ -33,6 +33,7 @@ export default function Nav({ onPalette }) {
         <NavLink to="/" end onClick={() => setMenuOpen(false)}>Home</NavLink>
         <NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink>
         <NavLink to="/work" onClick={() => setMenuOpen(false)}>Projects</NavLink>
+        <NavLink to="/sidequests" onClick={() => setMenuOpen(false)}>Sidequests</NavLink>
         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
         <a href={profile.resume} target="_blank" rel="noreferrer">Resume ↗</a>
       </nav>

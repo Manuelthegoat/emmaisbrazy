@@ -10,6 +10,7 @@ import Work from "./pages/Work";
 import Project from "./pages/Project";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Sidequests from "./pages/Sidequests";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
             <Route path="/work" element={<Work />} />
             <Route path="/work/:slug" element={<Project />} />
             <Route path="/about" element={<About />} />
+            <Route path="/sidequests" element={<Sidequests />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
