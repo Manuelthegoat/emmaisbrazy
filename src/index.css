@@ -590,10 +590,10 @@ html[data-theme="dark"] .currently-card-2 { background: #49382f; }
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
-.footer-logo-side { position: relative; display: flex; min-width: 0; flex-direction: column; justify-content: space-between; overflow: hidden; padding: 30px var(--pad) 0; border-right: 1px solid var(--line); }
+.footer-logo-side { position: relative; display: flex; min-width: 0; flex-direction: column; justify-content: space-between; overflow: visible; padding: 30px var(--pad) 0; border-right: 1px solid var(--line); }
 .footer-playground-prompt, .footer-placeholder-note { color: var(--dim); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 13px; }
 .footer-logo-field { display: flex; min-height: 160px; align-items: end; justify-content: space-between; gap: clamp(8px, 2vw, 24px); padding: 0 4px; }
-.footer-logo-placeholder { --logo-color: #7b61ff; display: grid; width: clamp(54px, 6vw, 92px); aspect-ratio: 1; flex: 0 1 92px; place-items: center; border-radius: 28%; background: var(--logo-color); color: white; box-shadow: 0 10px 30px color-mix(in srgb, var(--logo-color), transparent 76%); transform: translate(var(--nudge-x, 0), var(--nudge-y, 0)) rotate(var(--nudge-rotate, 0deg)); transition: transform 520ms cubic-bezier(.18, .85, .25, 1.35), border-radius 250ms ease; will-change: transform; user-select: none; }
+.footer-logo-placeholder { --logo-color: #7b61ff; display: grid; width: clamp(54px, 6vw, 92px); aspect-ratio: 1; flex: 0 1 92px; place-items: center; border-radius: 28%; background: var(--logo-color); color: white; box-shadow: 0 10px 30px color-mix(in srgb, var(--logo-color), transparent 76%); transform: translate(var(--nudge-x, 0), var(--nudge-y, 0)) rotate(var(--nudge-rotate, 0deg)); transition: transform 340ms cubic-bezier(.18, .85, .25, 1.35), border-radius 250ms ease; will-change: transform; user-select: none; }
 .footer-logo-placeholder:nth-child(odd) { border-radius: 50%; }
 .footer-logo-placeholder span { display: grid; width: 62%; aspect-ratio: 1; place-items: center; border: 2px solid currentColor; border-radius: inherit; font-family: var(--display); font-size: clamp(13px, 1.5vw, 20px); font-weight: 800; letter-spacing: -.08em; line-height: 1; }
 .footer-logo-violet { --logo-color: #6042d8; }

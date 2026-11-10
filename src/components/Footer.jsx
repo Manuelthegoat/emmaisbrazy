@@ -107,14 +107,14 @@ export default function Footer() {
       const dx = rect.left + rect.width / 2 - pointer.x;
       const dy = rect.top + rect.height / 2 - pointer.y;
       const distance = Math.hypot(dx, dy);
-      const reach = 150;
+      const reach = 260;
       if (distance < reach) {
-        const force = (reach - distance) / reach;
+        const force = ((reach - distance) / reach) ** 1.35;
         const angle = Math.atan2(dy || 0.01, dx || 0.01);
         offsets[tile.dataset.logoIndex] = {
-          x: Math.cos(angle) * force * 62,
-          y: Math.sin(angle) * force * 62,
-          rotate: Math.sign(dx || 1) * force * 11,
+          x: Math.cos(angle) * force * 150,
+          y: Math.sin(angle) * force * 150,
+          rotate: Math.sign(dx || 1) * force * 24,
         };
       }
     });
